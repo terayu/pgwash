@@ -255,12 +255,3 @@ bash test/integration/run.sh
 | `internal/db` | PostgreSQL アクセスの詳細（pgx、SQL組み立て、外部プロセス実行） |
 
 CLI と TUI はどちらも `washover.Engine` を呼び出す薄いラッパーで、DB操作の詳細を知りません。進捗は `Event` チャネル経由で通知されます。
-
-## ドキュメント
-
-| ドキュメント | 内容 |
-|---|---|
-| [`docs/洗い替え処理_ダウンタイム削減設計案.md`](docs/洗い替え処理_ダウンタイム削減設計案.md) | 処理手順・SQL・フェーズA/Bの定義 |
-| [`docs/洗い替えTUIツール_設計案.md`](docs/洗い替えTUIツール_設計案.md) | ツールとしての仕様（CLI/TUI/設定/安全対策） |
-| [`docs/洗い替え処理調査レポート.md`](docs/洗い替え処理調査レポート.md) | 背景（旧VB.NETアプリの調査結果） |
-| [`docs/HANDOFF.md`](docs/HANDOFF.md) | 実装引き継ぎ仕様・誤実装しやすい箇所 |
