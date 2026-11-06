@@ -1,0 +1,19 @@
+version: "3"
+vars:
+  BINARY: 'pgwash'
+  BINDIR: 'bin'
+  EXT: '.exe'
+
+tasks:
+  default:
+    cmds:
+      - task --list-all
+  build:
+    desc: "execute build"
+    cmds:
+      - 'go build -o {{.BINDIR}}/{{.BINARY}}{{.EXT}} ./cmd/pgwash'
+
+  buildvendor:
+    desc: "build using vendor directory"
+    cmds:
+      - 'go build -mod=vendor -o {{.BINDIR}}/{{.BINARY}}{{.EXT}} ./cmd/pgwash'

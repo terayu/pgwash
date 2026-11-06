@@ -1,0 +1,19 @@
+# ビルド成果物
+/bin/
+/vendor/
+/pgwash
+/pgwash.exe
+/test/integration/pgwash-linux-arm64
+
+# 結合検証の実行時出力（ダンプ・状態ファイル）
+/test/integration/state/
+
+# Go のテスト・プロファイル出力
+*.test
+*.out
+
+# OS / エディタ
+.DS_Store
+*.swp
+.idea/
+.vscode/
